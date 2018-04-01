@@ -1,0 +1,313 @@
+/*---GENERAL STYLES---*/
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  transition: color 0.3s linear;
+  color: #5b5b5b;
+}
+a:visited{
+
+}
+a:hover{
+  color: #cc9900;
+}
+a:active{
+
+}
+.title{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+.big_title{
+  color: #fff;
+  font-weight: 300;
+  font-size: 3em;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+}
+.baner_sect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+.button{
+  font-size: 0.9em;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 3em;
+}
+.b_y{
+  width: 10em;
+  color: #cc9900;
+  border: 1px solid #cc9900;
+  transition: all 0.3s linear;
+}
+.b_y:hover{
+  background: rgba(204, 153, 0, 0.3);
+  color: #cc9900;
+}
+.b_w{
+  width: 18em;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.3s linear;
+}
+.b_w:hover{
+  background: rgba(255, 255, 255, 0.3);
+  color: #cc9900;
+}
+/*--------------------
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+/*--------------------*/
+header{
+  background: #edeef1;
+  min-height: 100vh;
+  height: 100vh;
+}
+.logo_nav_wrapper{
+  display: flex;
+  justify-content: center;
+}
+  .logo_nav{
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bbb;
+    z-index: 100;
+  }
+    .nav_wrap{
+      display: flex;
+      width: 40%;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .nav_wrap a{
+      font-size: 0.8em;
+      text-transform: uppercase;
+      display: inline-block;
+      margin: 5px;
+    }
+    nav a{
+      position: relative;
+      font-weight: 700;
+    }
+    .fas.fa-angle-down{
+      font-size: 1.2em;
+      margin-left: 5px;
+    }
+    .nav_icon{
+      font-size: 1.5em;
+    }
+.header_title_slider{
+  height: 100%;
+}
+  .slide{
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .slide_one{
+    background: url("../img/pic/header_slider_first.png") no-repeat center center;
+    background-size: cover;
+  }
+  .slide_two{
+    background: url("../img/pic/header_slider_second.png") no-repeat center center;
+    background-size: cover;
+  }
+  .slide_three{
+    background: url("../img/pic/header_slider_third.png") no-repeat center center;
+    background-size: cover;
+  }
+  .slide_four{
+    background: url("../img/pic/header_slider_fourth.png") no-repeat center center;
+    background-size: cover;
+  }
+  .slide ul{
+    padding-left: 10%;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .slider_title{
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #cc9900;
+    letter-spacing: 0.1em;
+    line-height: 2;
+  }
+  .slider_subtitle{
+    font-weight: 300;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+  }
+  /*---PARTY---*/
+  /*---Baner---*/
+  .baner{
+    background: url("../img/bg/baner_bg.png") no-repeat center center;
+    background-size: cover;
+    min-height: 10em;
+  }
+    .baner_container{
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .baner_container .button{
+      align-self: flex-end;
+    }
+/*---INSPIRATION---*/
+  .inspiration{
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inspiration .title{
+    margin-bottom: 1em;
+  }
+  .inspiration_list{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .inspiration_list_items{
+    background: red;
+    min-width: calc(20em - 10px);
+    width: calc(50% - 10px);
+    margin: 5px;
+  }
+  .inspiration_list_items_inlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+/*---SERVE---*/
+.serve{
+  flex-direction: column;
+  background: #dadada;
+}
+.serve .big_title{
+  color: #cc9900;
+}
+.serve_list{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.serve_list li{
+  min-width: 10em;
+  width: 32%;
+  height: 13em;
+  margin: 5px;
+  text-align: center;
+}
+.serve_icon{
+  display: inline-block;
+  width: calc(3.1em - 4px);
+  line-height: 3;
+  font-size: 3em;
+  color: #fff;
+  background: #cc9900;
+  border-radius: 50%;
+  margin-bottom: 0.4em;
+}
+.serve_list p{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+/*---IDEAS---*/
+/*---RECIPES---*/
+.resipes{
+  background: url("../img/bg/recipes_bg.png") no-repeat center right;
+  background-size: cover;
+  min-height: 15em;
+}
+.recipes_container{
+  width: 80%;
+}
+.recipes_container .big_title{
+  margin-bottom: 1.5em;
+}
+/*---OUR BLOG---*/
+.blog{
+  padding: 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog_list{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.blog_list li{
+  background: #f6f6f6;
+  position: relative;
+  min-width: calc(15em - 10px);
+  width: calc(33% - 10px);
+  height: calc(15em - 10px);
+  margin: 5px;
+}
+.blog_list_picture{
+  height: 60%;
+}
+.blog_list_picture:nth-child(1){
+  background: url("../")
+}
+/*---CONTACTS---*/
+.contacts{
+  background: url("../img/bg/contact_bg.png") no-repeat center center;
+  background-size: cover;
+}
+.contact_list{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact_list li{
+  width: 50%;
+}
+.contact_list_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 20em;
+}
+.contact_list li:first-child{
+  color: #fff;
+}
+.contact_list li:last-child{
+  background: #fff;
+}
+.cl_icon{
+  margin-right: 10px;
+}
