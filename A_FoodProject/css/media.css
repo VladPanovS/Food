@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+  /*---GENERAL---*/
+  .big_title{
+    text-align: center;
+  }
+
+  /*---SERVE---*/
+  .serve_list{
+    justify-content: center;
+  }
+  /*---RESIPES---*/
+  .recipes_container{
+    text-align: center;
+  }
+  /*---CONTACTS---*/
+  .contact_list li{
+    width: 70%;
+  }
+  .contact_list_content{
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  /*---FOOTER---*/
+  .footer_container_newsletter form, .footer_container_newsletter fieldset{
+    width: 95%;
+  }
+  .footer_container_newsletter, .footer_container_list{
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px){
+  .ideas_list li img{
+    width: auto;
+  }
+}

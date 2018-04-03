@@ -20,6 +20,7 @@ a:active{
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.1em;
+  margin-bottom: 1em;
 }
 .big_title{
   color: #fff;
@@ -156,6 +157,60 @@ header{
     letter-spacing: 0.1em;
   }
   /*---PARTY---*/
+    .party{
+      padding: 2% 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .party_list{
+      width: 80%;
+      min-height: 40em;
+      display: grid;
+      grid-template-rows: repeat(3,33%);
+      grid-template-columns: repeat(5, 18.7%);
+      grid-gap: 20px;
+    }
+    .party_list li{
+      background: #f6f6f6;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .party_list li:nth-child(1){
+      grid-row: 1 /3;
+      grid-column: 1 / 3;
+    }
+    .party_list li:nth-child(2){
+      grid-row: 1 / 2;
+      grid-column: 3 / 4;
+    }
+    .party_list li:nth-child(3){
+      grid-row: 1 / 2;
+      grid-column: 4 / 5;
+    }
+    .party_list li:nth-child(4){
+      grid-row: 1 / 2;
+      grid-column: 5 /6;
+    }
+    .party_list li:nth-child(5){
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+    }
+    .party_list li:nth-child(6){
+      grid-row: 3 / 4;
+      grid-column: 2 / 3;
+    }
+    .party_list li:nth-child(7){
+      grid-row: 2 / 4;
+      grid-column: 3 / 5;
+    }
+    .party_list li:nth-child(8){
+      grid-row: 2 / 4;
+      grid-column: 5 / 6;
+    }
   /*---Baner---*/
   .baner{
     background: url("../img/bg/baner_bg.png") no-repeat center center;
@@ -172,36 +227,6 @@ header{
     .baner_container .button{
       align-self: flex-end;
     }
-/*---INSPIRATION---*/
-  .inspiration{
-    padding: 2% 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .inspiration .title{
-    margin-bottom: 1em;
-  }
-  .inspiration_list{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .inspiration_list_items{
-    background: red;
-    min-width: calc(20em - 10px);
-    width: calc(50% - 10px);
-    margin: 5px;
-  }
-  .inspiration_list_items_inlist{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
 /*---SERVE---*/
 .serve{
   flex-direction: column;
@@ -240,11 +265,59 @@ header{
   font-size: 0.9em;
 }
 /*---IDEAS---*/
+.ideas{
+  padding: 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ideas_list{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ideas_list li{
+  background: #f6f6f6;
+  min-width: calc(10em - 10px);
+  width: calc(25% - 10px);
+  height: calc(12em - 10px);
+  margin: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ideas_list li img{
+  width: 40%;
+}
+.ideas_icon{
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #cc9900;
+  transition: all 0.3s linear;
+}
+.ideas_icon:hover{
+  background: none;
+  border-color: #cc9900;
+}
 /*---RECIPES---*/
 .resipes{
   background: url("../img/bg/recipes_bg.png") no-repeat center right;
   background-size: cover;
-  min-height: 15em;
+  min-height: 20em;
+}
+.resipes.baner_sect{
+  align-items: flex-start;
 }
 .recipes_container{
   width: 80%;
@@ -269,16 +342,39 @@ header{
 .blog_list li{
   background: #f6f6f6;
   position: relative;
-  min-width: calc(15em - 10px);
-  width: calc(33% - 10px);
-  height: calc(15em - 10px);
+  min-width: calc(13em - 10px);
+  width: calc(25% - 10px);
+  height: calc(20em - 10px);
   margin: 5px;
 }
 .blog_list_picture{
   height: 60%;
 }
-.blog_list_picture:nth-child(1){
-  background: url("../")
+.blog_list_picture_one{
+  background: url("../img/pic/blog_first.png") no-repeat center center;
+  background-size: cover;
+}
+.blog_list_picture_two{
+  background: url("../img/pic/blog_second.png") no-repeat center center;
+  background-size: cover;
+}
+.blog_list_picture_three{
+  background: url("../img/pic/blog_third.png") no-repeat center center;
+  background-size: cover;
+}
+.blog_list_text{
+  padding: 4%;
+}
+.blog_list_text h2{
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+.blog_arrow{
+  color: #cc9900;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  font-size: 2em;
 }
 /*---CONTACTS---*/
 .contacts{
@@ -302,12 +398,131 @@ header{
   align-items: flex-start;
   height: 20em;
 }
+.contact_list_content_info{
+  display: flex;
+  align-items: center;
+}
 .contact_list li:first-child{
   color: #fff;
 }
 .contact_list li:last-child{
   background: #fff;
 }
-.cl_icon{
-  margin-right: 10px;
+.contact_list_icons a{
+  color: #fff;
 }
+.cl_icon{
+  text-align: center;
+  width: 1.5em;
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 2.5px;
+}
+.cl_icon-bottom{
+  border: 1px solid #cc9900;
+  border-radius: 50%;
+  background: #cc9900;
+  transition: all 0.3s linear;
+}
+.cl_icon-bottom:hover{
+  background: none;
+}
+/*---GOOGLEMAPS---*/
+  .googlemaps{
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+/*---FOOTER---*/
+footer{
+  padding: 2% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_container{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1em;
+  border-top: 1px solid #bbb;
+}
+.footer_container_newsletter{
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 23em;
+  min-width: 20em;
+  width: 35%;
+  margin-bottom: 1em;
+}
+.footer_container_newsletter h3{
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.footer_container_newsletter fieldset{
+  width: 80%;
+  background: #e3e3e3;
+  border-radius: 5px;
+}
+.email_field{
+  background: #e3e3e3;
+  color: #000;
+  width: calc(88% - 0.6em);
+  line-height: 2;
+  padding: 0.3em;
+  border: none;
+  border-radius: 5px;
+}
+.submit_field{
+  background: url("../img/icons/envelope.png") no-repeat center center;
+  width: 10%;
+  line-height: 2.4;
+  border: none;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+.lang{
+  width: 3rem;
+  border-bottom: 1px solid #cc9900;
+}
+.lang .fas.fa-angle-down{
+  color: #cc9900;
+}
+.footer_container_newsletter p{
+  font-size: 0.7em;
+  color: #999999;
+  font-weight: 100;
+  line-height: 1.5;
+  width: 80%;
+}
+.footer_container_list{
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+  .footer_container_list li{
+    height: 5em;
+    min-width: 5em;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .footer_container_list li a:first-child{
+    font-weight: bold;
+    color: #000;
+  }
